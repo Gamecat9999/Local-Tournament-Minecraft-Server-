@@ -1,0 +1,34 @@
+name: CompetitiveTournament
+main: com.yourname.tournament.TournamentPlugin
+version: 1.5
+api-version: 1.20
+commands:
+  starttournament:
+    description: Start the tournament
+    usage: /starttournament
+  stoptournament:
+    description: Stop the tournament
+    usage: /stoptournament
+  spectate:
+    description: Spectate a player or start rotation
+    usage: /spectate <player>|rotate|stop
+  spectateleader:
+    description: Spectate the current kill leader
+    usage: /spectateleader
+  unspectate:
+    description: Return from spectating
+    usage: /unspectate
+  tpall:
+    description: Teleport all players to you
+    usage: /tpall
+  respawn:
+    description: Force respawn a player
+    usage: /respawn <player>
+  setwinnerspot:
+    description: Set winner spotlight location
+    usage: /setwinnerspot
+permissions:
+  tournament.start:
+    default: op
+  tournament.admin:
+    default: op
